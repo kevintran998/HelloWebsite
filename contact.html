@@ -14,6 +14,8 @@
                     <li><a href="contact.html">contact us</a></li>
                 </ul>
             </nav>
+
+            <input type="search" placeholder="Search...">
         </header>
 
         <aside>
@@ -48,15 +50,46 @@
             <h2>Contact Us:</h2>
             <form>
                 <div>
-                    <label for="name">Name:</label> <input type="text" placeholder="Enter your name" id="name" name="name">
+                    <label for="name">Name:</label> <input type="text" id="name" name="name" placeholder="Enter your name">
                 </div>
 
                 <div>
-                    <label for="email">Email:</label> <input type="email" placeholder="Enter your email" id="email" name="email">
+                    <label for="email">Email:</label> <input type="email" id="email" name="email" placeholder="Enter your email">
                 </div>
 
                 <div>
                     <label for="message">Message:</label> <textarea cols="30" rows="5" id="message" name="message"></textarea>
+                </div>
+
+                <!-- <div>
+                    <label for="subject">Subject:</label>
+                    <select id="subject">
+                        <optgroup label="Product issues">
+                            <option value="returns">Returns</option>
+                            <option value="faultyItem">Faulty item</option>
+                        </optgroup>
+                        <optgroup label="Delivery">
+                            <option value="delivery">Delivery info</option>
+                            <option value="orderTracking">Order Tracking</option>
+                        </optgroup>
+                        <optgroup label="Other">
+                            <option value="advice">Advice</option>
+                            <option value="other">Other</option>
+                        </optgroup>
+                    </select>
+                </div> -->
+
+                <div>
+                    <label for="subject">Subject:</label>
+                    <input type="text" id="subject" list="subjects" placeholder="Enter your subject">
+                    <datalist id="subjects">
+                        <option value="returns">
+                        <option value="faultyItem">
+                        <option value="delivery">
+                        <option value="orderTracking">
+                        <option value="advice">
+                        <option value="other">
+                    </datalist>
                 </div>
 
                 <div>
@@ -81,7 +114,20 @@
                     <label for="emailResponse">Email</label>
                     <input type="radio" id="emailResponse" name="response" value="email">
                 </div>
+
+                <div>
+                    <input type="submit">
+                    <input type="reset">
+                </div>
             </form>
+
+            <iframe
+                width="600"
+                height="450"
+                frameborder="0" style="border:0"
+                src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDwgIsjTAcICOicwJIEjGY0fLWil-5GuWw
+                &q=Space+Needle,Seattle+WA" allowfullscreen>
+            </iframe>
         </main>
 
         <footer>
