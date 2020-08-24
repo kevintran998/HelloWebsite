@@ -2,27 +2,163 @@ html
 {
     background: #f7f7f7;
 }
+
 body
 {
     font-family: 'Barlow', sans-serif;
     background: white;
+    color: rgb(49, 46, 46);
     max-width: 1000px;
     margin: 0 auto;
 }
+
 header, footer 
 {
+    padding: 20px 10px;
     background: #333a40;
     color: white;
 }
 
-.product
+header h1, nav
 {
-    border: 1px solid grey;
-    width: 200px;
-    
+    display: inline-block;
+}
+
+header li
+{
+    display: inline;
+}
+
+header h1
+{
+    width: 65%;
+}
+
+ul
+{
+    margin: 0;
+    padding: 0;
+}
+
+li
+{
+    list-style: none;
+    line-height: 25px;
+}
+
+a
+{
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover
+{
+    color: #0e69e9;
 }
 
 img
 {
     max-width: 100%;
+}
+
+main 
+{
+    width: 680px;
+    padding: 5px;
+    display: inline-block;
+}
+
+aside
+{
+    width: 270px;
+    padding: 10px;
+    vertical-align: top;
+    display: inline-block;
+}
+
+.product
+{
+    width: 210px;
+    margin: 5px;
+    padding: 5px;
+    box-sizing: border-box;
+    border: 1px solid grey;
+    display: inline-block;
+    text-align: center;
+}
+
+.button
+{
+    padding: 10px;
+    display: inline-block;
+}
+
+.button:last-of-type
+{
+    background: #0e69e9;
+    color: white;
+}
+
+/* Product Detail Page */
+
+.product-detail 
+{
+    width:  660px;
+}
+
+.product-detail img
+{
+    max-width: 50%;
+    float: left;
+}
+
+table
+{
+    width: 400px;
+    margin: 20px 0;
+    text-align: left;
+}
+
+caption
+{
+    font-style: italic;
+    font-weight: bold;
+    border-bottom: 1px solid; 
+    padding: 10px;
+}
+
+th, td
+{
+    padding: 10px;
+}
+
+tr:hover
+{
+    background: #f5f5f5;
+}
+
+/* Contact Us Page */
+
+form
+{
+    width: 600px;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+form > div{
+    margin: 10px 0;
+}
+
+.inline label
+{
+    width: 100px;
+    display: inline-block;
+}
+
+input[type="text"], input[type="email"], textarea
+{
+    width: 400px;
+    padding: 10px;
 }
