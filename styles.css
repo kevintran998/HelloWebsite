@@ -1,14 +1,14 @@
 html
 {
     background: #f7f7f7;
-}
+ }
 
 body
 {
     font-family: 'Barlow', sans-serif;
     background: white;
     color: rgb(49, 46, 46);
-    max-width: 1000px;
+    text-align: center;
     margin: 0 auto;
 }
 
@@ -31,7 +31,12 @@ header li
 
 header h1
 {
-    width: 65%;
+    width: 100%;
+}
+
+input[type="search"]
+{
+    width: 100%;
 }
 
 ul
@@ -62,29 +67,13 @@ img
     max-width: 100%;
 }
 
-main 
-{
-    width: 680px;
-    padding: 5px;
-    display: inline-block;
-}
-
-aside
-{
-    width: 270px;
-    padding: 10px;
-    vertical-align: top;
-    display: inline-block;
-}
-
 .product
 {
-    width: 210px;
+    width: 100%;
     margin: 5px;
     padding: 5px;
     box-sizing: border-box;
     border: 1px solid grey;
-    display: inline-block;
     text-align: center;
 }
 
@@ -104,19 +93,21 @@ aside
 
 .product-detail 
 {
-    width:  660px;
+    width: 100%;
 }
 
 .product-detail img
 {
-    max-width: 50%;
+    max-width: 100%;
+    margin-bottom: 5px;
     float: left;
 }
 
 table
 {
     width: 400px;
-    margin: 20px 0;
+    margin-left: auto;
+    margin-right: auto;
     text-align: left;
 }
 
@@ -161,4 +152,95 @@ input[type="text"], input[type="email"], textarea
 {
     width: 400px;
     padding: 10px;
+}
+
+@media (min-width: 600px)
+{
+    .product-detail 
+    {
+        width:  80%;
+    }
+
+    .product-detail img
+    {
+        max-width: 50%;
+        float: left;
+    }
+}
+
+@media (min-width: 800px)
+{
+    input[type="search"]
+    {
+        width: 40%;
+        margin-left: 2em;
+    }
+
+    .product
+    {
+        display: inline-block;
+        width: 48%;
+    }
+}
+
+@media (min-width: 1000px)
+{
+    body
+    {
+        text-align: left;
+    }
+
+    header h1
+    {
+        width: 60%;
+    }
+
+    main 
+    {
+        width: 68%;
+        padding: 5px;
+        display: inline-block;
+    }
+
+    aside
+    {
+        width: 27%;
+        padding: 10px;
+        vertical-align: top;
+        display: inline-block;
+    }
+    
+    table
+    {
+        margin: 20px 0;
+    }
+}
+
+@media (min-width: 1200px)
+{
+    body
+    {
+        width: 80%;
+    }
+
+    .product
+    {
+        width: 30%;
+    }
+
+    input[type="search"]
+    {
+        width: 20%;
+    }
+
+    .product-detail 
+    {
+        width:  66%;
+    }
+
+    .product-detail img
+    {
+        max-width: 50%;
+        float: left;
+    }
 }
