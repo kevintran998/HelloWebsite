@@ -4,15 +4,15 @@ This is the first website I have built following a tutorial while learning HTML 
 
 ***** PROGRAMING LANGUAGE AND TOOLS *****
 
-HTML
-CSS
-Visual Studio Code
+- HTML
+- CSS
+- Visual Studio Code
 
 ***** FEATURES *****
 
-3 pages
-Google Maps
-Responsive Design
+- 3 pages
+- Google Maps
+- Responsive Design
 
 ***** HOW IT WORKS *****
 
